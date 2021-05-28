@@ -37,23 +37,28 @@ This repository will allow us to share code, questions, and research related to 
         code ./pyfunc-playground
         ```
 
+        ```bash
         3. Select, `Create virtual environment` on the following pop-up.
+        ```
         ![venv popup](.images/pyfunc-venv.PNG)
 
+        ```bash
         4. Select the python interpreter, (3.8.x recommended)
+        ```
+
         ![venv popup2](.images/pyfunc-venv2.PNG)
 
-            **Note:** One may incur the following pop-up, requesting a storage account:
-            ![venv popup2](.images/pyfunc-storage-account.PNG)
+        **Note:** One may incur the following pop-up, requesting a storage account:
+        ![venv popup2](.images/pyfunc-storage-account.PNG)
         
-            **TLDR;** Timer triggers, among others, require a storage account to run. Otherwise this error will occur.
-            ![venv popup2](.images/pyfunc-storage-error.png)
+        **TLDR;** Timer triggers, among others, require a storage account to run. Otherwise this error will occur.
+        ![venv popup2](.images/pyfunc-storage-error.png)
 
-            
-
-        
+        ```bash
         5. Congratulations, you should see the following terminal window!
+        ```
         ![success](.images/pyfunc-success.png)
+        
 
         
     - In Azure?
