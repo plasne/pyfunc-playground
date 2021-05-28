@@ -24,8 +24,39 @@ This repository will allow us to share code, questions, and research related to 
 
 - Can we deploy and run code?
     - Locally?
+        ANSWER: Yes.
+        
+        ### WSL+VS Code Steps:
+        ```bash
+        # 1. Clone the repo
+        git clone https://github.com/plasne/pyfunc-playground.git
+        ```
+
+        ```bash
+        # 2. Open the directory in VS Code
+        code ./pyfunc-playground
+        ```
+
+        3. Select, `Create virtual environment` on the following pop-up.
+        ![venv popup](.images/pyfunc-venv.PNG)
+
+        4. Select the python interpreter, (3.8.x recommended)
+        ![venv popup2](.images/pyfunc-venv2.PNG)
+
+            **Note:** One may incur the following pop-up, requesting a storage account:
+            ![venv popup2](.images/pyfunc-storage-account.PNG)
+        
+            **TLDR;** Timer triggers, among others, require a storage account to run. Otherwise this error will occur.
+            ![venv popup2](.images/pyfunc-storage-error.png)
+
+            
+
+        
+        5. Congratulations, you should see the following terminal window!
+        ![success](.images/pyfunc-success.png)
+
+        
     - In Azure?
-    - In VSCODE?
     - Using CLI?
 
 - Can we host as web service?
