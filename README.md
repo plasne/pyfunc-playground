@@ -38,6 +38,8 @@ This repository will allow us to share code, questions, and research related to 
 
 - Test performance of an operation from cold and warm and document it.
 
+- What does integration with AppInsights look like?
+
 ## Links
 
 - https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference
