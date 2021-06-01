@@ -27,6 +27,7 @@ This repository will allow us to share code, questions, and research related to 
     - In Azure?
     - In VSCODE?
     - Using CLI?
+        - ANSWER: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-python?tabs=azure-cli%2Cbash%2Cbrowser (tested successfully)
 
 - Can we host as web service?
 
