@@ -2,24 +2,43 @@ import logging
 
 import azure.functions as func
 import pandas as pd
+import requests
 from azure.search.documents import SearchClient
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
-    df = pd.DataFrame(
-        {
-            "Name": [
-                "Braund, Mr. Owen Harris",
-                "Allen, Mr. William Henry",
-                "Bonnell, Miss. Elizabeth",
-            ],
-            "Age": [22, 35, 58],
-            "Sex": ["male", "male", "female"],
-        }
-    )
-    logging.info(df.describe())
-    print(SearchClient.__dir__)
+
+    def test_pandas():
+        df = pd.DataFrame(
+            {
+                "Name": [
+                    "Braund, Mr. Owen Harris",
+                    "Allen, Mr. William Henry",
+                    "Bonnell, Miss. Elizabeth",
+                ],
+                "Age": [22, 35, 58],
+                "Sex": ["male", "male", "female"],
+            }
+        )
+        logging.info(df.describe())
+
+    def test_azure_search():
+        print(SearchClient.__dir__)
+
+
+    def test_requests():
+        r = requests.post("http://httpbin.org/post")
+        print("Testing POST...")
+        print("POST: Success!") if r.status_code == 200 else print("POST: Failure")
+        
+        r = requests.get("http://httpbin.org/get")
+        print("Testing GET...")
+        print("GET: Success!") if r.status_code == 200 else print("GET: Failure")
+    
+    test_pandas()
+    test_azure_search()
+    test_requests()
 
     name = req.params.get('name')
     if not name:
