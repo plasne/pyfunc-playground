@@ -12,6 +12,14 @@
       ]
     },
     {
+      "name": "outputblob",
+      "type": "blob",
+      "dataType": "string",
+      "path": "output/{filename}.txt",
+      "connection": "AzureStorageConnectionAppSetting",
+      "direction": "out"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "$return"
