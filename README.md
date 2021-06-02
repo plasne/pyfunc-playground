@@ -13,10 +13,19 @@ This repository will allow us to share code, questions, and research related to 
 ## Investigations
 
 - Can we get common Python libraries working? Pandas, Numpy
+    Yes, as long as the library supports linux.
 
 - Can we get Azure Cognitive Search client library for Python working?
     - https://github.com/Azure-Samples/azure-search-python-samples
     - https://github.com/Azure/azure-sdk-for-python/tree/azure-search-documents_11.1.0/sdk/search/azure-search-documents/samples
+    ANSWER:
+    We can import the sdk, however we need some secrets to access ACS.
+    - index_name (not a secret?)
+    - SEARCH_ENDPOINT (not a secret?)
+    - SEARCH_API_KEY
+    How to store secrets:
+    - https://docs.microsoft.com/en-us/azure/azure-functions/security-concepts#managing-secrets
+    - TLDR; Application Settings, specifically in the `local.settings.json` for local dev, and somewhere else if deployed on Azure. Otherwise self-managed with Azure Key Vault.
 
 - What versions of Python are supported?
     - ANSWER: https://docs.microsoft.com/en-us/azure/azure-functions/supported-languages#languages-by-runtime-version
@@ -62,6 +71,11 @@ This repository will allow us to share code, questions, and research related to 
 
         
     - In Azure?
+        Answer: Yes
+        Select your subscription, then your function app that you created via the portal.
+        Right-click and select `Deploy to Function App...`
+
+
     - Using CLI?
 
 - Can we host as web service?

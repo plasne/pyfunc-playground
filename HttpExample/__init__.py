@@ -1,10 +1,25 @@
 import logging
 
 import azure.functions as func
+import pandas as pd
+from azure.search.documents import SearchClient
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
+    df = pd.DataFrame(
+        {
+            "Name": [
+                "Braund, Mr. Owen Harris",
+                "Allen, Mr. William Henry",
+                "Bonnell, Miss. Elizabeth",
+            ],
+            "Age": [22, 35, 58],
+            "Sex": ["male", "male", "female"],
+        }
+    )
+    logging.info(df.describe())
+    print(SearchClient.__dir__)
 
     name = req.params.get('name')
     if not name:
