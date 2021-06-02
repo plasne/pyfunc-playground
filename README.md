@@ -35,7 +35,7 @@ This repository will allow us to share code, questions, and research related to 
 
 - Can we do an HTTP POST to a web webservice?
 
-- Can we save to blob storage?
+- Can we save to blob storage? output binding
 
 - Test performance of an operation from cold and warm and document it.
 
