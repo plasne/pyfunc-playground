@@ -81,8 +81,9 @@ This repository will allow us to share code, questions, and research related to 
 - Can we host as web service?
 
 - Can we do an HTTP GET from a webservice?
-
+    Yes
 - Can we do an HTTP POST to a web webservice?
+    Yes
 
 - Can we save to blob storage?
 
