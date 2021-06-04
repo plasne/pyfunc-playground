@@ -89,15 +89,16 @@ This repository will allow us to share code, questions, and research related to 
     - ANSWER: yes
 
 - Can we do an HTTP GET from a webservice?
-    Yes
+    - ANSWER: Yes
+
 - Can we do an HTTP POST to a web webservice?
-    Yes
+    - ANSWER: Yes
 
 - Can we save to blob storage? output binding
-    - ANSER: yes, shown in `cli-mac-func-proj`
+    - ANSWER: Yes, shown in `cli-mac-func-proj`
 
 - Test performance of an operation from cold and warm and document it.
-    - PETER
+    - ANSWER: Documented in `cold-start.md`.
 
 - What does integration with AppInsights look like?
     - DEX
