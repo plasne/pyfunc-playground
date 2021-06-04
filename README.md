@@ -10,6 +10,12 @@ This repository will allow us to share code, questions, and research related to 
 
 - What libraries do we need to use? ex. Pandas, Numpy
 
+- Functions as containers?
+
+- Why even use Functions at all?
+
+- Do they have a preferred unit testing framework for Python?
+
 ## Investigations
 
 - Can we get common Python libraries working? Pandas, Numpy
@@ -77,19 +83,29 @@ This repository will allow us to share code, questions, and research related to 
 
 
     - Using CLI?
+        - ANSWER: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-python?tabs=azure-cli%2Cbash%2Cbrowser (tested successfully)
 
-- Can we host as web service?
+- Can we host as web service? trigger
+    - ANSWER: yes
 
 - Can we do an HTTP GET from a webservice?
     Yes
 - Can we do an HTTP POST to a web webservice?
     Yes
 
-- Can we save to blob storage?
+- Can we save to blob storage? output binding
+    - PETER
 
 - Test performance of an operation from cold and warm and document it.
+    - PETER
 
 - What does integration with AppInsights look like?
+    - DEX
+
+- How do we do CI/CD?
+    - https://docs.microsoft.com/en-us/azure/azure-functions/functions-continuous-deployment
+
+- How do we do unit testing?
 
 ## Links
 

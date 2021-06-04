@@ -1,0 +1,28 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "Anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "dataType": "string",
+      "path": "output/{filename}.txt",
+      "connection": "AzureStorageConnectionAppSetting",
+      "direction": "out"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
