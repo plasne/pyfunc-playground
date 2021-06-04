@@ -94,7 +94,7 @@ This repository will allow us to share code, questions, and research related to 
     Yes
 
 - Can we save to blob storage? output binding
-    - PETER
+    - ANSER: yes, shown in `cli-mac-func-proj`
 
 - Test performance of an operation from cold and warm and document it.
     - PETER
