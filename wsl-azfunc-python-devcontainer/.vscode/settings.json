@@ -1,10 +1,10 @@
 {
     "azureFunctions.deploySubpath": ".",
     "azureFunctions.scmDoBuildDuringDeployment": true,
-    //NOTE: Using /usr/local/py-utils/venvs/virtualenv is not possible. Az func host expects '.venv' to be in project workspace.
-    "azureFunctions.pythonVenv": ".venv",  
+    //NOTE: requires single quotes to prevent premature variable expansion
+    "azureFunctions.pythonVenv": "'/usr/local/py-utils/venvs/virtualenv'",  
     "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",
-    "python.pythonPath": ".venv/bin/python3"
+    "python.pythonPath": "'/usr/local/py-utils/venvs/virtualenv/bin/python3'"
 }
