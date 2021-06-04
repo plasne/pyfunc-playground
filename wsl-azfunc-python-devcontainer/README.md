@@ -10,11 +10,7 @@
     - Choose this sub-directory
     - Wait for devcontainer to build (restart if vscode crashes for any reason; select 'allow' if firewall permissions are prompted)
 
-1. Run `python3 -m venv .venv` to create .venv sub-directory
-
-1. Run `.venv/bin/python3 -m pip install --upgrade pip` to install latest pip to virtual environment
-
-    > Note: .venv directories must be created from within the devcontainer. They also must live with within the same workspace directory as the project.
+1. Run `/usr/local/py-utils/venvs/virtualenv/bin/python  -m pip install --upgrade pip` to install latest pip to virtual environment
 
 1. Open `./pyfunc-HttpTrigger1/_init_.py`
 
