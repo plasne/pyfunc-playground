@@ -3,13 +3,17 @@
 Here is the data from some warm executions of the HelloWorld service which writes a message to blob...
 
 __Dataset__: [0.281393, 0.211332, 0.168132, 0.165836, 0.181599, 0.259707, 0.158387, 0.189689, 0.147810, 0.161251, 0.159347, 0.147366, 0.179143, 0.180670, 0.154449, 0.153678, 0.172940, 0.219063] 18 samples
+
 __Range__: 0.147366 - 0.281393
+
 __Average__: 0.182877
 
 Here is the data from some cold executions of the HelloWorld service which writes a message to blob...
 
 __Dataset__: [0.565065, 0.506495, 0.581789, 0.572215, 0.598630, 0.734826, 0.610703, 0.591457, 0.548597, 0.570093, 0.674447, 0.597485, 0.579737, 0.572238, 0.577276, 0.632795, 0.526608, 0.560387] 18 samples
+
 __Range__: 0.506495 - 0.734826
+
 __Average__: 0.588935
 
 As you can see, there is about a 400ms difference with a cold start.
